@@ -23,6 +23,7 @@ final class GalleryViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(GalleryCollectionViewCell.self, forCellWithReuseIdentifier: GalleryCollectionViewCell.reuseID)
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
+        collectionView.isHidden = true
         return collectionView
     }()
     private lazy var searchController: UISearchController = {
@@ -170,9 +171,11 @@ extension GalleryViewController: GalleryViewControllerProtocol{
     }
     
     public func successInternetConnection() {
+        if self.collectionView.isHidden{
+            self.collectionView.reloadData()
+        }
         self.tryAgainButton.isHidden = true
         self.collectionView.isHidden = false
-        self.collectionView.reloadData()
         self.scrollToTopButtonObserver()
     }
     
