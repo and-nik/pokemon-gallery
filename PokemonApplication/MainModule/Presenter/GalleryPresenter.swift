@@ -91,19 +91,14 @@ final class GalleryPresenter: GalleryPresenterProtocol {
     public func isPokemonFavorite(pokemon: Pokemon) -> Bool {
         let pokemons = self.dataHandlerService.loadData()
         
-        return pokemons.contains(where: { favoritePokemon in
-            favoritePokemon.name == pokemon.name
-        })
+        return pokemons.contains(where: { $0.name == pokemon.name})
     }
     
     public func getPokemon(whith number: Int, completion: @escaping (Pokemon, Data) -> Void){
         guard let pokemonsUrls = self.pokemonsUrls else {return}
         
         self.networkService.getPokemonFromUrl(pokemonsUrls: pokemonsUrls, number: number) { pokemon in
-            guard let pokemon else {
-                //self.galleryViewController?.failureInternetConnection()
-                return
-            }
+            guard let pokemon else {return}
             pokemon.sprites.getImage(url: pokemon.sprites.frontDefaultUrl) { image in
                 guard let imageData = image.pngData() else {return}
                 completion(pokemon, imageData)

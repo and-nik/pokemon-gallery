@@ -12,7 +12,6 @@ protocol FavoritesViewControllerProtocol: AnyObject{
 }
 
 protocol FavoritesPresenterProtocol: AnyObject{
-    
     var favoritesPokemons: [Pokemon]? {get set}
     
     init(viewController: FavoritesViewControllerProtocol, dataHandlerService: DataHandlerServiceProtocol)

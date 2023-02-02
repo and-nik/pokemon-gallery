@@ -13,7 +13,6 @@ protocol PokemonInfoViewControllerProtocol: AnyObject{
 }
 
 protocol PokemonInfoPresenterProtocol: AnyObject{
-    
     var pokemon: Pokemon? {get set}
     
     init(pokemonInfoViewController: PokemonInfoViewControllerProtocol, pokemon: Pokemon, datahandlerService: DataHandlerServiceProtocol)
