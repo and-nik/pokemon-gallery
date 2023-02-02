@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  PokemonApplication
+
+  Created by And Nik on 02.02.23.
+  
+*/
+
+//GalleryViewController localization
+"Pokemons" = "Pokemons";
+"Favorites" = "Favorites";
+
+"Pokemons Gallery" = "Pokemons Gallery";
+"Search pokemon" = "Search pokemon";
+
+//FavoritesViewController localization
+"Favorites Pokemons" = "Favorites Pokemons";
+
+//PokemonInfoViewController localization
+"Full name" = "Full name";
+"Type(s)" = "Type(s)";
+"Weight" = "Weight";
+"Height" = "Height";
