@@ -133,7 +133,7 @@ extension PokemonInfoViewController: PokemonInfoViewControllerProtocol{
             types += type.type.name + " "
         }
         
-        self.pokemonDescriptionLabel.text = "full name: \(pokemon.name)\n" + "type(s): " + types + "\n" + "weight: \(pokemon.weight)\n" + "height: \(pokemon.height)"
+        self.pokemonDescriptionLabel.text = "Full name".localized() + ": " + pokemon.name + "\n" + "Type(s)".localized() + ": " + types + "\n" + "Weight".localized() + ": " + "\(pokemon.weight)" + "\n" + "Height".localized() + ": " + "\(pokemon.height)"
     }
     
 }

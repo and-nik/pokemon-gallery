@@ -22,11 +22,11 @@ final class TabBarController: UITabBarController{
     private func createTabBar() {
         let navigationGalleryVC = UINavigationController(rootViewController: Builder.shared.createGalleryVC())
         navigationGalleryVC.tabBarItem.image = UIImage(systemName: "circle.bottomhalf.filled")
-        navigationGalleryVC.tabBarItem.title = "Pokemons"
+        navigationGalleryVC.tabBarItem.title = "Pokemons".localized()
         
         let navigationFavoritesVC = UINavigationController(rootViewController: Builder.shared.createFavoritesVC())
         navigationFavoritesVC.tabBarItem.image = UIImage(systemName: "star.fill")
-        navigationFavoritesVC.tabBarItem.title = "Favorites"
+        navigationFavoritesVC.tabBarItem.title = "Favorites".localized()
         
         self.viewControllers = [navigationGalleryVC, navigationFavoritesVC]
     }
