@@ -27,7 +27,7 @@ final class GalleryViewController: UIViewController {
     }()
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: Builder.shared.createSearchVC(results: [PokemonUrl]()))
-        searchController.searchBar.placeholder = "Search pokemon"
+        searchController.searchBar.placeholder = "Search pokemon".localized()
         searchController.searchResultsUpdater = self
         searchController.showsSearchResultsController = true//show result controller content even searchBar.text is empty
         searchController.searchBar.tintColor = .tintColor
@@ -109,7 +109,7 @@ final class GalleryViewController: UIViewController {
     }
     
     private func navigationControllerConfig(){
-        self.navigationItem.title = "Pokemons Gallery"
+        self.navigationItem.title = "Pokemons Gallery".localized()
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.searchController = self.searchController
     }

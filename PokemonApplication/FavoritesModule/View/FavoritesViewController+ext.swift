@@ -57,7 +57,7 @@ final class FavoritesViewController: UIViewController{
     }
     
     private func navigationControllerConfig(){
-        self.navigationItem.title = "Favorites Pokemons"
+        self.navigationItem.title = "Favorites Pokemons".localized()
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
