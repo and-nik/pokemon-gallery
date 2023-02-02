@@ -9,6 +9,7 @@ import Foundation
 @testable import PokemonApplication
 
 final class MockGalleryViewController: GalleryViewControllerProtocol{
+    
     func failureInternetConnection() {
         print("failureInternetConnection")
     }
