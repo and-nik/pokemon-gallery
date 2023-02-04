@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   PokemonApplication
 
@@ -21,3 +21,23 @@
 "Type(s)" = "Type(s)";
 "Weight" = "Weight";
 "Height" = "Height";
+
+//Pokemon types localization
+"normal" = "normal";
+"fire" = "fire";
+"water" = "water";
+"grass" = "grass";
+"electic" = "electic";
+"ice" = "ice";
+"fighting" = "fighting";
+"poison" = "poison";
+"ground" = "ground";
+"flying" = "flying";
+"psychic" = "psychic";
+"bug" = "bug";
+"rock" = "rock";
+"ghost" = "ghost";
+"dark" = "dark";
+"dragon" = "dragon";
+"steel" = "steel";
+"fairy" = "fairy";

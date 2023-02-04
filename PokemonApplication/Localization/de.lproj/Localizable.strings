@@ -21,3 +21,23 @@
 "Type(s)" = "Typ(en)";
 "Weight" = "Gewicht";
 "Height" = "Größe";
+
+//Pokemon types localization
+"normal" = "normal";
+"fire" = "feuer";
+"water" = "wasser";
+"grass" = "gras";
+"electic" = "electisch";
+"ice" = "eis";
+"fighting" = "ringen";
+"poison" = "vergiften";
+"ground" = "erde";
+"flying" = "fliegend";
+"psychic" = "psychisch";
+"bug" = "insekt";
+"rock" = "stein";
+"ghost" = "geist";
+"dark" = "dunkel";
+"dragon" = "drachen";
+"steel" = "stahl";
+"fairy" = "magie";
