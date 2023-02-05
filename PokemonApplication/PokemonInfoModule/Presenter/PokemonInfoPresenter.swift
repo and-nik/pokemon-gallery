@@ -50,7 +50,7 @@ final class PokemonInfoPresenter: PokemonInfoPresenterProtocol{
     
     public func didTabAtFavoriteButton(){
         guard let pokemonInfoVC = self.pokemonInfoViewController,
-              let pokemon = self.pokemon else {return}
+              var pokemon = self.pokemon else {return}
         
         var pokemons = self.datahandlerService.loadData()
         

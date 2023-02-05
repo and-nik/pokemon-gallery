@@ -7,7 +7,7 @@
 
 import UIKit.UIImage
 
-class Pokemon: Codable{
+struct Pokemon: Codable{
     
     public let name: String
     public let sprites: Sprites

@@ -18,21 +18,16 @@ struct Sprites: Codable{
             }
             return
         }
-        
         URLSession.shared.dataTask(with: url) { data, response, error in
             DispatchQueue.main.async {
-                
                 if let error {
                     print(error)
                     completion(UIImage(systemName: "questionmark.circle")!)
                     return
                 }
-
                 guard let data,
                       let image = UIImage(data: data) else {return}
-                
                 completion(image)
-                
             }
         }.resume()
     }

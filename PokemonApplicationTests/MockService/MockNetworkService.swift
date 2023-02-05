@@ -31,4 +31,7 @@ final class MockNetworkService: NetworkServiceProtocol{
         completion(pokemon)
     }
     
+    func getData<T>(url: URL, completion: @escaping (T?) -> Void) where T : Decodable {
+    }
+    
 }

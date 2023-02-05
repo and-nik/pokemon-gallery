@@ -15,7 +15,11 @@ final class GalleryPresenterTest: XCTestCase {
     var mockNetworkService: NetworkServiceProtocol!
     var mockDataHandlerService: DataHandlerServiceProtocol!
     
-    override class func tearDown() {
+    override func tearDown() {
+        mockGalleryViewController = nil
+        galleryPresenter = nil
+        mockNetworkService = nil
+        mockDataHandlerService = nil
     }
     
     func testGetPokemonsUrls(){
