@@ -20,7 +20,10 @@ final class NetworkService: NetworkServiceProtocol{
         let pokemonsStringUrl = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1300"
         guard let url = URL(string: pokemonsStringUrl) else {return}
         self.getData(url: url) { (_ result: ListOfPokemonsUrls?) in
-            guard let listOfPokemonsUrls = result else {completion(nil);return}
+            guard let listOfPokemonsUrls = result else {
+                completion(nil)
+                return
+            }
             let pokemonsUrls = listOfPokemonsUrls.pokemonsUrls
             completion(pokemonsUrls)
         }

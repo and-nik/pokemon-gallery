@@ -10,4 +10,8 @@ import Foundation
 struct Types: Codable{
     
     public let type: PokemonType
+    
+    init(type: PokemonType) {
+        self.type = type
+    }
 }
